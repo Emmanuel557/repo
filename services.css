@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --crimson: rgb(240, 25, 68);
+    --blue: rgb(173, 216, 230);
+    --softorange:hsl(35, 82%, 59%);
+    --white: hsl(0, 100%, 99%);
+    --black: hsl(0, 3%, 6%);
+    --gray: hsl(0, 0%, 88%);
+}
+header{
+    display: flex;
+}
+body{
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    background-position-x: center;
+}
+.hamicon{
+    display: block;
+    display: none;
+}
+.navwrapper{
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6rem;
+    display: none;
+}
+.blehhh{
+    display: block;
+    float: right;
+    margin-top: .7rem;
+    margin-right: 2.3rem;
+    cursor: pointer;
+}
+ul{
+    margin-top: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: .4rem;
+}
+ul > li{
+    display: block;
+    margin-top: .8rem;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid var(--gray);
+}
+ul > li > a{
+    color: var(--black);
+}
+ul > li:last-child{
+    border-bottom: none;
+}
+.hamicon{
+    margin-left: 10rem;
+    display: block;
+}
+.serve{
+    display: flex;
+}
+.serve > header, .serve > a{
+    margin: 1rem;
+}
+.serve > a{
+    background: var(--softorange);
+    text-decoration: none;
+    color: var(--black);
+    padding: .4rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: .4rem;
+}
+.serve > a:hover{
+    background: var(--black);
+    color: var(--white);
+    transition: .2s;
+}
+.image{
+    width: 10%;
+}
+.icon{
+    display: none;
+}
+.breed > h1, .niku > h2{
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+ .breed > p, .niku > p{
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.niku > button{
+    background: var(--crimson);
+    margin-top: -.5rem;
+    margin-bottom: .7rem;
+    padding: .3rem .7rem;
+    font-size: .8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .4rem;
+}
+.niku > button:hover{
+    transition: ease-out .1s;
+    padding: .4rem .7rem;
+}
+.back{
+    background: var(--blue);
+    color: var(--white);
+    margin-top: .5rem;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+    border-radius: 1rem;
+}
+.back > p{
+    font-size: .8rem;
+    font-weight: 500;
+}
+.killua{
+    background: var(--gray);
+    padding: .3rem;
+    border-radius: .4rem;
+}
+.back > button{
+    background: var(--crimson);
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    padding: .3rem .7rem;
+    font-size: .8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .4rem;
+}
+.back > button:hover{
+    transition: ease-out .1s;
+    padding: .4rem .7rem;
+}
+span{
+    color: var(--crimson);
+}
+.serve2{
+    background: var(--blue);
+}
+.van{
+    margin-left: 1.5rem;
+}
+.dam{
+    margin-right: 2rem;
+}
+.vector{
+    width: 100%;
+}
+.fluffy{
+    background: var(--softorange);
+}
+footer{
+    background: var(--softorange);
+    margin-top: 1.5rem;
+}
+@media(max-width:1326px){
+    body{
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        /* background-position-x: center; */
+    }
+    .hamicon{
+        display: block;
+        display: none;
+    }
+    .navwrapper{
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem;
+        display: none;
+    }
+    .blehhh{
+        display: block;
+        float: right;
+        margin-top: .7rem;
+        margin-right: 2.3rem;
+    }
+    ul{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    ul > li{
+        display: block;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--gray);
+    }
+    ul > li > a{
+        color: var(--black);
+    }
+    ul > li:last-child{
+        border-bottom: none;
+    }
+    .hamicon{
+        margin-left: 10rem;
+        display: block;
+    }
+}
+@media(max-width:1199px){
+    .vector{
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media(max-width:1024px){
+    .rev{
+        flex-direction: column;
+    }
+    .back{
+        margin-bottom: 1rem;
+    }
+    .vector{
+        width: 100%;
+    }
+}
+@media(max-width:991px){
+    .rev{
+        flex-direction: column;
+    }
+    .nen{
+        margin-bottom: 1rem;
+    }
+    .serve2{
+        width: 100%;
+        border-radius: 1.1rem;
+    }
+    .vector{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+   .breed > p, .niku > p, .back > p{
+        font-size: .8rem;
+    }
+    .back{
+        margin-left: 1rem;
+    }
+    .image{
+        width: 25%;
+    }
+    .vector{
+        width: 100%;
+    }
+}
+@media(max-width:470px){
+    .image{
+        width: 23%;
+    }
+    .serve > a{
+        padding: .1rem .9rem;
+    }
+    .vector{
+        width: 100%;
+    }
+}
+@media(max-width:418px){
+    .breed > h1, .niku > h2{
+    font-size: 1.5rem;
+    }
+    .back > h3{
+        font-size: 1.4rem;
+    }
+    .back > p{
+        font-size: .7rem;
+    }
+    .back > button{
+        margin-bottom: .7rem;
+    }
+    .vector{
+        width: 100%;
+    }
+}
+@media(max-width:378px){
+    .back > h3{
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
+     .breed > p, .niku > p, .back > p{
+        font-size: .7rem;
+    }
+}
+@media(max-width:332px){
+    .image{
+        width: 70%;
+    }
+     .back > h3{
+        font-size: 1.1rem;
+        margin-bottom: .2rem;
+    }
+    .spa{
+        width: 100%;
+    }
+}
+@media(max-width:328px){
+    .gojo{
+        flex-direction: column-reverse;
+    }
+    .nen{
+        padding-right: 2rem;
+    }
+    .image{
+        width: 40%;
+    }
+}
+@media(max-width:306px){
+    .image{
+        width: 70%;
+    }
+}
+@media(max-width:289px){
+    .image{
+        width: 100%;
+    }
+}
+@media(max-width:261px){
+    .image{
+        width: 100%;
+    }    
+}    
+@media(max-width:260px){
+    .image{
+        width: 100%;
+    }
+    .fluffy{
+        flex-direction: column;
+        align-items: center;
+    }
+    .breed > p, .niku > p, .back > p{
+        font-size: .8rem;
+    }
+}
+@media(max-width:223px){
+   .dam{
+    margin-right: .5rem;
+   }
+}
+@media(max-width:200px){
+    .image{
+        width: 100%;
+    }
+    .dam{
+    margin-right: .1rem;
+   }
+}
+@media(max-width:180px){
+    .serve{
+        flex-direction: column;
+    }
+    .image{
+        width: 50%;
+    }
+}

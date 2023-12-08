@@ -1,0 +1,856 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --softorange:hsl(35, 82%, 59%);
+    --black: hsl(0, 3%, 6%);
+    --white: hsl(0, 100%, 99%);
+    --gray: hsl(0, 0%, 88%);
+}
+
+header{
+    display: flex;
+    padding-top: 1.4rem;
+}
+.image{
+    width: 15%;
+    margin-right: 3rem;
+}
+ul > li{
+    list-style: none;
+    display: inline;
+    padding: 1rem;
+    justify-content: space-between;
+}
+ul > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+ul > li > a:hover{
+    background-color: var(--softorange);
+    color: var(--white);
+    padding: .7rem .9rem;
+    transition: .4s;
+    border-radius: 1rem;
+}
+.blehhh, .hamicon, .button3{
+    display: none;
+}
+.button2{
+    background: var(--black);
+    color: var(--white);
+    margin-top: -.6rem;
+    margin-left: 1.4rem;
+    font-size: 1.1rem;
+    padding: .6rem 1.1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.button2 > a{
+    text-decoration: none;
+    color: var(--white);
+}
+.button2:hover{
+    background: var(--softorange);
+    transition: .3s;
+}
+.button3{
+    color: var(--black);
+    font-size: .9rem;
+    padding: .3rem .9rem;
+    border: none;
+}
+.button3 > a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+}
+.button3:hover{
+    background: var(--softorange);
+}
+/* .bankai{
+    display: flex;
+} */
+.katen{
+    display: flex;
+    margin-top: 8rem;
+}
+.small > h1{
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+.small > p{
+    font-size: 1rem;
+   line-height: 1.5rem;
+}
+.small{
+    width: 40%;
+}
+.meni{
+    width: 100%;
+    margin-top: -8rem;
+}
+span{
+    color: var(--softorange);
+}
+.button{
+    background: var(--black);
+    margin-top: 1.7rem;
+    padding: .7rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.button > a{
+    text-decoration: none;
+    color: var(--white);
+}
+.button:hover{
+    background: var(--softorange);
+    transition: .3s;
+}
+
+.benihime{
+    background: var(--white);
+    width: 30%;
+    border-radius: 1.5rem;
+}
+.urahara{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+.unohana{
+    width: 100%;
+}
+.flex2{
+    display: flex;
+    width: 100%;
+    background: var(--black);
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.lovers{
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: .6rem;
+}
+.lovers > h5{
+    color: var(--softorange);
+    font-weight: 700;
+}
+.lovers > p{
+    color: var(--white);
+}
+.pro{
+    background: var(--softorange);
+    color: var(--black);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: .3rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+.pro:hover{
+    background: var(--white);
+    font-weight: 500;
+}
+.pet{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+.care{
+    margin: 1.1rem;
+    padding: 1rem;
+    background: var(--black);
+    border-radius: 1.5rem;
+}
+.care:hover{
+    transition:  ease-out 1s;
+    cursor: pointer;
+}
+.random{
+    width: 100%;
+    padding: 20rem;
+    background: var(--black);
+    border-radius: 1rem;
+}
+.fotor{
+    width: 100%;
+}
+.big{
+    width: 35%;
+    margin-top: -2.6rem;
+    margin-left: 9rem;
+}
+.aratame{
+    width: 30%;
+    background: var(--white);
+    border-radius: 1rem;
+}
+.know{
+    background: var(--black);
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.fate1{
+    margin-top: 1rem;
+}
+.fate{
+    display: flex;
+}
+.tips > p{
+    font-weight: 700;
+}
+.proyo{
+    background: var(--softorange);
+    margin: .6rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: .4rem 1.1rem;
+    border: none;
+    border-radius: 1.2rem;
+    
+}
+.proyo:hover{
+    background: var(--black);
+    transition: .3s;
+}
+.proyo1{
+    background: var(--black);
+    color: var(--softorange);
+    margin: .6rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: .4rem 1.1rem;
+    border: none;
+    border-radius: 1.2rem;
+    
+}
+.proyo1:hover{
+    background: var(--softorange);
+    color: var(--black);
+    font-weight: 500;
+    transition: .1s;
+}
+footer{
+    background: var(--gray);
+}
+.image2{
+    width: 20%;
+}
+.kyokotsu{
+    margin-left: 40rem;
+}
+.yama{
+    width: 10%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+@media(max-width:1198px){
+    ul > li > a{
+        font-size: .9rem;
+    }
+    ul > li > a:hover{
+        transition: .2s;
+        border-bottom: .1rem solid var(--softorange);
+    }
+    .image{
+        margin-right: 1rem;
+    }
+    .button2, .button{
+        font-size: .9rem;
+    }
+    ul > li{
+        padding: .5rem;
+    }
+    .small > h1{
+        font-size: 2rem;
+    }
+    .small > p{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .lovers > h5{
+        font-size: .8rem;
+    }
+    .lovers > p{
+        font-size: .7rem;
+        font-weight: 500;
+    }
+    .pro{
+        font-size: .7rem;
+        font-weight: 600;
+        margin-top: .7rem;
+        margin-left: .5rem;
+    }
+    .pet{
+        font-size: .8rem;
+    }
+    .care > h4{
+        font-size: 1.3rem;
+    }
+    .random{
+        height: 100vh;
+    }
+    .tips{
+        font-size: .8rem;
+    }
+    .know > h3{
+        font-size: 1.4rem;
+    }
+    .proyo, .proyo1{
+        font-size: .9rem;
+        margin-left: 3rem;
+    }
+    .image2{
+        width: 17%;
+    }
+    .kyokotsu{
+        margin-left: 32rem;
+    }
+    .remi > h1{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .kyokotsu > h4{
+        font-weight: 700;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    } 
+}
+@media(max-width:991px){
+     body{
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+    }
+    .hamicon{
+        display: block;
+        display: none;
+    }
+    .navwrapper{
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem;
+        display: none;
+    }
+    .blehhh{
+        display: block;
+        float: right;
+        margin-top: .7rem;
+        margin-right: 2.3rem;
+        /* display: none; */
+    }
+    ul{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    ul > li{
+        display: block;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--gray);
+    }
+    ul > li:last-child{
+        border-bottom: none;
+    }
+    .hamicon{
+        display: block;
+    }
+    .small{
+        width: 100%;
+    }
+    .meni{
+        width: 100%;
+        margin-top: .2rem;
+    }
+    .small > h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .lovers > h5{
+        font-size: .6rem;
+        font-weight: 700;
+    }
+    .lovers > p{
+        font-size: .8rem;
+    }
+    .pro{
+        font-weight: 600;
+        margin-top: -1rem;
+        margin-bottom: .7rem;
+        padding: .1rem .4rem;
+    }
+    .pet{
+        font-size: .6rem;
+        font-weight: 700;
+    }
+    .care > h4{
+        font-size: .9rem;
+    }
+    .click{
+        margin-top: -8rem;
+    }
+    .know > h3{
+        font-size: 1rem;
+    }
+    .big{
+        width: 25%;
+    }
+    .tips > p{
+        font-size: .6rem;
+    }
+    .proyo, .proyo1{
+        font-size: .7rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        padding: .3rem 1rem;
+    }
+    .image2{
+        width: 19%;
+    }
+    .remi > h1{
+        font-size: 1.5rem;
+    }
+    .remi > p{
+        font-size: .7rem;
+    }
+    .kyokotsu{
+        margin-left: 20rem;
+    }
+    .kyokotsu > h4{
+        font-size: 1.3rem;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:874px){
+    .button2{
+        display: none;
+    }
+    .hamicon{
+        display: block;
+    }
+    .blehhh{
+        display: block;
+    }
+}
+@media(max-width:820px){
+    .hamicon{
+        margin-left: 6rem;
+    }
+    .random{
+        height: 50vh;
+    }
+}
+@media(max-width:767px){
+    .katen{
+        display: block;
+    }
+    .small > h1{
+        font-size: 2rem;
+    }
+    .small > p{
+        font-size: 1rem;
+    }
+    .button2{
+        margin-left: -3rem;
+        padding: .5rem .7rem;
+        border-radius: .6rem;
+    }
+    .button{
+        padding: .5rem .7rem;
+        border-radius: .6rem;
+    }
+    .flex2{
+        margin-top: .5rem;
+        border-radius: .7rem;
+    }
+    .unohana{
+        width: 100%;
+    }
+    .lovers > p{
+        font-size: .8rem;
+    }
+    .care{
+        margin: .3rem;
+        border-radius: .7rem;
+    }
+    .care > h4{
+        font-size: .7rem;
+    }
+    .random > h3{
+        font-size: 1.3rem;
+    }
+    .random > p{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .big{
+        width: 35%;
+        margin-left: 5rem;
+    }
+    .know > h3{
+        font-size: .8rem;
+    }
+    .tips > p{
+        font-size: .6rem;
+        font-weight: 500;
+    }
+    .proyo, .proyo1{
+        font-size: .5rem;
+        font-weight: 700;
+        margin-top: -.9rem;
+        padding: .4rem 1.2rem;
+    }
+    .kyokotsu{
+        margin-left: 9rem;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:539px){
+    .button2{
+        font-size: .8rem;
+        margin-top: .8rem;
+        padding: .5rem .7rem;
+        border-radius: .6rem;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:538px){
+    .button2{
+        margin-top: .8rem;
+    }
+    .small > p{
+        font-size: .9rem;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:532px){
+    .button2{
+        font-size: .6rem;
+        padding: .6rem .9rem;
+    }
+    .proyo{
+        font-size: .5rem;
+        padding: .6rem 1rem;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:530px){
+    .button2{
+        display: none;
+    }
+    .hamicon{
+        display: flex;
+    }
+    .yama{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:527px){
+   .tips > p{
+    font-size: .5rem;
+    font-weight: 700;
+   }
+   .proyo, .proyo1{
+    font-size: .5rem;
+    padding: .1rem 1.1rem;
+   }
+}
+@media(max-width:525px){
+    .remi > p{
+        font-size: .8rem;
+    }
+    .kyokotsu{
+        margin-left: 8rem;
+    }
+    .kyokotsu > p{
+        font-size: .8rem;
+    }
+}
+@media(max-width:523px){
+    .random > h3{
+        font-size: 1.2rem;
+    }
+    .random > p{
+        font-size: .6rem;
+        line-height: 1rem;
+    }
+}
+@media(max-width:509px){
+    .kyokotsu > h4{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:485px){
+    .navwrapper{
+        display: none;
+    }
+    .kyokotsu > h4{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:480px){
+    body{
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+    }
+    .hamicon{
+        display: block;
+        /* display: none; */
+    }
+    .navwrapper{
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem;
+        display: none;
+    }
+    .niku{
+        display: block;
+        float: right;
+        margin-top: .7rem;
+        margin-right: 2.3rem;
+        display: none;
+    }
+    ul{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    ul > li{
+        display: block;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--gray);
+    }
+    ul > li:last-child{
+        border-bottom: none;
+    }
+    .meni{
+        width: 100%;
+        margin-top: .1rem;
+    }
+    .katen{
+        flex-direction: column;
+    }
+    .small{
+        width: 100%;
+    }
+    .small > h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .small > p{
+        font-weight: 500;
+    }
+    .mty{
+        flex-direction: column;
+    }
+    .big{
+        width: 30%;
+        margin-top: .1rem;
+    }
+    .button{
+        padding: .3rem .9rem;
+        border-radius: .3rem;
+    }
+     .button2{
+        display: none;
+     }
+     .kyokotsu{
+        margin-left: 4rem;
+     }
+}
+@media(max-width:443px){
+    .remi > p{
+        font-size: .9rem;
+    }
+    .kyokotsu{
+        margin-left: .1rem;
+    }
+}
+@media(max-width:414px){
+    .pro{
+        margin-bottom: .6rem;
+    }
+}
+@media(max-width:378px){
+    .lovers > h5{
+        font-size: 1.2rem;
+    }
+    .lovers > p{
+        font-size: .8rem;
+    }
+    .pro{
+        margin-top: .2rem;
+    }
+    .pet{
+        font-size: .9rem;
+    }
+    .mit{
+        flex-direction: column;
+    }
+    .remi > h1{
+        border-bottom: .1rem solid var(--white);
+    }
+    .kyokotsu > h4{
+        font-weight: 700;
+        border-bottom: .1rem solid var(--white);
+    }
+    .yama{
+        width: 6%;
+    }
+}
+@media(max-width:375px){
+    .lovers > h5{
+        font-size: 1rem;
+    }
+}
+@media(max-width:374px){
+    .proyo, .proyo1{
+        font-size: .9rem;
+    }
+    .lovers > h5{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:372px){
+    .blehhh{
+        margin-right: 1rem;
+    }
+}
+@media(max-width:361px){
+    .lovers > h5{
+        font-size: 1rem;
+    }
+}
+@media(max-width:359px){
+    .proyo1{
+        font-size: .8rem;
+    }
+}
+@media(max-width:356px){
+    .proyo{
+        font-size: .8rem;
+    }
+    .tips > p{
+        font-size: .9rem;
+    }
+}
+@media(max-width:354px){
+    .pro{
+        font-size: .9rem;
+    }
+}
+@media(max-width:346px){
+    .lovers > h5{
+        font-size: .9rem;
+    }
+    .lovers > p{
+        font-size: .7rem;
+    }
+}
+@media(max-width:345px){
+    .pro{
+        font-size: .8rem;
+    }
+}
+@media(max-width:341px){
+    .proyo1{
+        font-size: .7rem;
+    }
+}
+@media(max-width:338px){
+    .proyo{
+        font-size: .7rem;
+    }
+}
+@media(max-width:337px){
+    .pro{
+        font-size: .7rem;
+    }
+}
+@media(max-width:330px){
+    .lovers > h5{
+        font-size: .8rem;
+    }
+    .pro{
+        margin-bottom: .3rem;
+     }
+}
+@media(max-width:325px){
+    .lovers > p{
+        font-size: .6rem;
+    }
+    .pro{
+        font-size: .6rem;
+        margin-top: -1rem;
+    }
+}
+@media(max-width:319px){
+    .pro{
+        font-size: .5rem;
+    }
+}
+@media(max-width:314px){
+    .lovers > h5{
+        font-size: .7rem;
+    }
+}
+
+@media(max-width:280px){
+    ul{
+        width: 100%;
+        margin-left: -2rem;
+        padding-right: 8rem;
+        border-bottom: none;
+        font-size: .4rem;
+    }
+    .blehhh{
+        margin-right: -1rem;
+    }
+}
+
+
+
+
+
+
+

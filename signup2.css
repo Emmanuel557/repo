@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+:root{
+    --softorange:hsl(35, 82%, 59%);
+    --black: hsl(0, 3%, 6%);
+    --white: hsl(0, 100%, 99%);
+    --gray: hsl(0, 0%, 88%);
+}
+header{
+    display: flex;
+    padding-top: 1rem;
+}
+ul > li{
+    list-style: none;
+    display: inline;
+    padding: 1rem;
+    justify-content: space-between;
+}
+ul > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+ul > li > a:hover{
+    background-color: var(--softorange);
+    color: var(--white);
+    padding: .7rem .9rem;
+    transition: .4s;
+    border-radius: 1rem;
+}
+.blehhh, .hamicon{
+    display: none;
+}
+.main > a{
+    background: var(--gray);
+    text-decoration: none;
+    color: var(--black);
+    padding: .1rem .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: .4rem;
+}
+
+.orange:hover{
+    background: var(--softorange);
+    color: var(--white);
+}
+.headerlogo{
+    width: 10%;
+}
+.brown{
+    width: 90%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.barkalot, .form{
+    width: 43%;
+}
+.barkalot > h2{
+    font-weight: 600;
+}
+.barkalot > p{
+    font-size: 1.1rem;
+}
+.barkalot > h2, .barkalot > p{
+    margin: 1rem;
+}
+span{
+    color: var(--softorange);
+}
+.female{
+    width: 100%;
+    margin-top: -1.5rem;
+}
+form{
+    /* background: var(--black); */
+    width: 86%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+form > input{
+    width: 99%;
+    margin: .1rem;
+    padding: .5rem;
+    border-radius: .7rem;
+    border: none;
+    outline: none;
+    border: .1rem solid var(--softorange);
+}
+form > input:hover{
+    transition: .1s;
+    border-bottom: .2rem solid var(--softorange);
+}
+.submit{
+    background: var(--gray);
+    width: 99%;
+    margin: .2rem;
+    margin-top: .3rem;
+    margin-top: .3rem;
+    padding: .4rem 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .7rem;
+}
+.submit:hover{
+    background: var(--softorange);
+    color: var(--white);
+}
+.pine{
+    width: 96%;
+    margin: .2rem;
+    padding: .4rem;
+    background: var(--softorange);
+    border-radius: .3rem;
+}
+.pine:hover{
+    padding: .6rem;
+    background: var(--gray);
+    transition: .2s;
+}
+.name-err, .lastname-err, .email-err, .password-err{
+    width: 100%;
+    color: var(--softorange);
+    font-size: .7rem;
+    font-style: italic;
+    padding: -.1rem 0;
+}
+@media(max-width:991px){
+    body{
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        background-position-x: center;
+    }
+    .hamicon{
+        display: block;
+        display: none;
+    }
+    .navwrapper{
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem;
+        display: none;
+    }
+    .blehhh{
+        display: block;
+        float: right;
+        margin-top: .7rem;
+        margin-right: 2.3rem;
+    }
+    ul{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    ul > li{
+        display: block;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--gray);
+    }
+    ul > li > a{
+        color: var(--black);
+    }
+    ul > li:last-child{
+        border-bottom: none;
+    }
+    .hamicon{
+        margin-left: 10rem;
+        display: block;
+    }
+    .form, .barkalot{
+        width: 100%;
+    }
+    .barkalot > p{
+        font-size: .9rem;
+    }
+    form{
+        width: 100%;
+        margin: .2rem;
+    }
+    form > input{
+        width: 100%;
+        margin-left: -.1rem;
+        padding: .3rem;
+        border-radius: .3rem;
+    }
+    form > h3{
+        font-size: 1.2rem;
+    }
+    .submit{
+        width: 100%;
+        margin-left: -.1rem;
+        padding: .4rem;
+    }
+    .pine{
+        width: 95%;
+        align-items: center;
+    }
+}
+@media(max-width:767px){
+    .hamicon{
+        margin-left: -1rem;
+       
+    }
+    .barkalot > p{
+        font-size: .8rem;
+    }
+}
+@media(max-width:520px){
+    form{
+        background: none;
+    }
+    .sign5{
+        color: var(--black);
+    }
+    .pine{
+        margin: .3rem;
+        padding: .3rem;
+    }
+}
+@media(max-width:504px){
+    .headerlogo{
+        width: 10%;
+        margin-right: .4rem;
+    }
+    
+    .brown{
+        flex-direction: column;
+    }
+    .pine{
+        margin-left: 1rem;
+        padding: .1rem;
+    }
+}
+@media(max-width:280px){
+    ul{
+        width: 100%;
+        margin-left: -2rem;
+        padding-right: 8rem;
+        border-bottom: none;
+    }
+    .blehhh{
+        margin-right: -1rem;
+    }
+}
+@media(max-width:250px){
+    .sasageyo{
+       display: none;
+    }
+}

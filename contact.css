@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray: rgb(218, 218, 218);
+    --black: rgb(0, 0, 0);
+    --softorange:hsl(35, 82%, 59%);
+    --white: hsl(0, 100%, 99%);
+}
+header{
+    display: flex;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.image{
+    width: 10%;
+}
+ul > li{
+    list-style: none;
+    display: inline;
+    padding: 1rem;
+    justify-content: space-between;
+}
+ul > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+ul > li > a:hover{
+    background-color: var(--softorange);
+    color: var(--white);
+    padding: .7rem .9rem;
+    transition: .4s;
+    border-radius: 1rem;
+}
+.blehhh, .hamicon{
+    display: none;
+}
+.ten{
+    border-bottom: .2rem solid var(--black);
+}
+.ten:hover{
+    transition: .2s;
+    border-bottom: .2rem solid var(--softorange);
+    
+}
+.divme{
+    margin: 3rem auto;
+}
+.color{
+    color: var(--softorange);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+span{
+    color: var(--softorange);
+}
+p{
+    font-weight: 500;
+}
+.beep{
+    background: var(--gray);
+    width: 21%;
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+}
+.beep2{
+    margin-left: -15rem;
+}
+.beep2 > h4{
+    border-bottom: .1rem solid var(--black);
+}
+form{
+    background: var(--softorange);
+    padding: 2rem;
+    border-radius: .4rem;
+}
+form > input{
+    width: 90%;
+    margin: .7rem;
+    padding: .6rem;
+    border: none;
+    border-bottom: .2rem solid var(--gray);
+    outline: none;
+    border-radius: .3rem;
+}
+form > input:hover{
+    /* border: .1rem solid var(--gray);
+    outline: .1rem var(--black); */
+    transition: .2s;
+    border-bottom: .3rem solid var(--gray);
+}
+#subject{
+    width: 90%;
+    height: 18vh;
+    margin-top: .6rem;
+    margin-left: .6rem;
+    padding: .3rem;
+    border: none;
+    border-bottom: .2rem solid var(--gray);
+    outline: none;
+    border-radius: .3rem;
+}
+#subject:hover{
+    transition: .2s;
+    border-bottom: .3rem solid var(--gray);
+}
+.button3{
+    background: var(--gray);
+    color: var(--black);
+    width: 90%;
+    margin-top: .6rem;
+    margin-left: .6rem;
+    padding: .5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .3rem;
+    border-bottom: .2rem solid var(--black);
+}
+.button3:hover{
+    background: var(--black);
+    color: var(--softorange);
+    border-bottom: .2rem solid var(--gray);
+    transition: .2s;
+}
+.bggray{
+    background: var(--gray);
+}
+.name-err, .email-err, .phone-err{
+    font-style: italic;
+    font-size: .6rem;
+    margin: .3rem;
+    color: var(--black);
+}
+@media(max-width:991px){
+    body{
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        background-position-x: center;
+    }
+    .hamicon{
+        display: block;
+        display: none;
+    }
+    .navwrapper{
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem;
+        display: none;
+    }
+    .blehhh{
+        display: block;
+        float: right;
+        margin-top: .7rem;
+        margin-right: 2.3rem;
+    }
+    ul{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    ul > li{
+        display: block;
+        margin-top: .8rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--gray);
+    }
+    ul > li > a{
+        color: var(--black);
+    }
+    ul > li:last-child{
+        border-bottom: none;
+    }
+    .hamicon{
+        margin-left: 10rem;
+        display: block;
+    }
+    .beep2 > h4{
+        border-bottom: .1rem solid var(--black);
+    }
+    .sukuna{
+        flex-direction: column;
+    }
+    p{
+        font-size: .8rem;
+    }
+    .beep2{
+        margin-left: -25rem;
+    }
+    form{
+        margin-bottom: 1rem;
+    }
+    .bggray{
+        padding-left: .7rem;
+        border-radius: .3rem;
+    }
+}
+@media(max-width:767px){
+    .beep2 > h4{
+        border-bottom: .1rem solid var(--black);
+    }
+    form > input{
+        padding: .4rem;
+    }
+    .image{
+        width: 10%;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 400;
+    }
+    .beep2{
+        margin-left: -15rem;
+    }
+}
+@media(max-width:480px){
+    .beep2 > h4{
+        border-bottom: .1rem solid var(--black);
+    }
+    form > input{
+        padding: .4rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+}
+@media(max-width:403px){
+    .image{
+        width: 30%;
+    }
+}
+@media(max-width:379px){
+    .beep2 > h4{
+        border-bottom: .1rem solid var(--black);
+    }
+}
+@media(max-width:360px){
+    .beep{
+        width: 21%;
+        padding: 1rem;
+    }
+    .beep2{
+        margin-left: -14rem;
+    }
+    form > input{
+        width: 100%;
+        margin-left: -.1rem;
+    }
+    #subject{
+        width: 100%;
+        margin-left: -.1rem;
+    }
+    .button3{
+        width: 100%;
+        margin-left: -.1rem;
+    }
+}
+@media(max-width:341px){
+    .beep{
+        width: 18%;
+        padding: .8rem;
+    }
+}
+
+@media(max-width:320px){
+        ul{
+            width: 100%;
+            margin-left: -2rem;
+            padding-right: 8.5rem;
+            border-bottom: none;
+        }
+        .blehhh{
+            margin-right: -.1rem;
+        }
+}
+@media(max-width:312px){
+    .beep{
+        width: 16%;
+        padding: .6rem;
+    }
+    .image{
+        width: 40%;
+    }
+}
+@media(max-width:300px){
+    .beep{
+        background: none;
+        width: 13%;
+        padding: .5rem;
+    }
+}
+@media(max-width:288px){
+    .beep{
+        width: 10%;
+        margin-top: .2rem;
+        padding: .3rem;
+    }
+    .image{
+        width: 60%;
+    }
+}
+@media(max-width:260px){
+    .beep{
+        width: 8%;
+        padding: .2rem;
+    }
+    .image{
+        width: 100%;
+    }
+}
+@media(max-width:250px){
+    .image{
+        width: 100%;
+    }
+    .beep{
+        display: none;
+    }
+}
+@media(max-width:232px){
+    .image{
+        width: 100%;
+    }
+}
+@media(max-width:213px){
+    .image{
+        width: 100%;
+    }
+    .beep2{
+        margin-left: -13rem;
+    }
+}
+@media(max-width:195px){
+    .beep2{
+        margin-left: -12rem;
+    }
+}
+@media(max-width:181px){
+    .beep2{
+        margin-left: -11rem;
+    }
+}
+@media(max-width:164px){
+    .image{
+        width: 100%;
+    }
+    .beep2{
+        margin-left: -10rem;
+    }
+}
+@media(max-width:150px){
+    .image{
+        width: 100%;
+    }
+    .beep2{
+        margin-left: -9rem;
+    }
+}
